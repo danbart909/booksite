@@ -39,7 +39,7 @@ html {
 
 #nav-mobile-container {
   background-color: lightgray;
-  height: 35vh;
+  height: 25vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -47,7 +47,6 @@ html {
 }
 
 #nav-mobile-top {
-  outline: 1px solid black;
   height: 80%;
   display: flex;
   flex-direction: column;
@@ -61,10 +60,12 @@ html {
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
-  font-size: 400%;
+  font-size: 355%;
   text-align: center;
+  line-height: 100%;
+  padding: 0.5% 0 0 0;
 }
 
 /* #nav-mobile-title-1 {
@@ -82,7 +83,6 @@ html {
 } */
 
 #nav-mobile-top-2 {
-  outline: 1px solid black;
   height: 20%;
   width: 100%;
   display: flex;
@@ -93,11 +93,9 @@ html {
 }
 
 #nav-mobile-author {
-  outline: 1px solid black;
 }
 
 #nav-mobile-bot {
-  outline: 1px solid black;
   height: 20%;
   display: flex;
   justify-content: center;
@@ -201,47 +199,31 @@ html {
 
 
 #body-container {
-  /* outline: 5px solid black; */
   display: flex;
-  /* width: 100%; */
-  /* height: 100%; */
 }
 
 #carousel-container {
-  /* outline: 5px solid black; */
   display: flex;
   justify-content: center;
-  /* flex-flow: row; */
-  /* align-items: center; */
-  /* text-align: center; */
   width: 100%;
   height: auto;
 }
 
 .slide-container {
-  /* outline: 5px solid black; */
-  /* height: 100%; */
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
 .carousel-slide {
-  /* outline: 5px solid black; */
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background-color: black;
-  background-position: center top;
-  background-repeat: no-repeat;
-  background-size: auto 100%; */
 }
 
 .slide {
-  /* outline: 1px solid gold; */
   width: 100%;
   height: 100%;
   background-color: black;
@@ -347,11 +329,20 @@ html {
 
 
 
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 480px) {
 
-  body {
-
+  #nav-mobile-top-1 {
+    font-size: 450%;
   }
+
+
+}
+
+
+
+
+
+@media screen and (min-width: 720px) {
 
 
 
@@ -368,7 +359,7 @@ html {
   #nav-container {
     background-color: gray;
     display: flex;
-    height: 18vh;
+    height: 25vh;
     display: flex;
     flex-direction: column;
   }
@@ -378,16 +369,38 @@ html {
   }
 
   #nav-top {
-    outline: 1px solid black;
-    height: 70%;
+    height: 80%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
+  }
+
+  #nav-top-1 {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 450%;
+    text-align: center;
+    line-height: 100%;
+    padding: 0.5% 0 0 0;
+  }
+
+  #nav-top-2 {
+    height: 20%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 140%;
+    text-align: center;
   }
   
-  #nav-title {
-    outline: 1px solid black;
+  /* #nav-title {
     height: 70%;
     width: 100%;
     display: flex;
@@ -395,20 +408,18 @@ html {
     align-items: center;
     font-size: 250%;
     text-align: center;
-  }
+  } */
   
   #nav-author {
-    outline: 1px solid black;
     height: 30%;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 140%;
+    font-size: 100%;
   }
 
   #nav-bot {
-    outline: 1px solid black;
     height: 30%;
     display: flex;
     justify-content: center;
@@ -417,7 +428,6 @@ html {
   }
 
   #nav-bot-clickable-area {
-    outline: 1px solid black;
     width: 100%;
     height: 100%;
     display: flex;
@@ -426,7 +436,6 @@ html {
   }
 
   #nav-bot-clickable-area a {
-    outline: 1px solid black;
     padding: 5px;
     text-decoration: none;
     color: black;

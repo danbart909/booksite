@@ -7,8 +7,13 @@ export default class Nav extends Component {
     return (
       <div id='nav-container'>
         <div id='nav-top'>
-          <span id='nav-title'>Born Again Man Whore</span>
-          <span id='nav-author'>Marc Special</span>
+          <div id='nav-top-1'>
+            <span id='nav-title-1'>BORN AGAIN</span>
+            <span id='nav-title-2'>MAN-WHORE</span>
+          </div>
+          <div id='nav-top-2'>
+            <span id='nav-author'>Marc Special</span>
+          </div>
         </div>
         <div id='nav-bot'>
           <div id='nav-bot-clickable-area'>
