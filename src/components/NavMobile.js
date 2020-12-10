@@ -7,16 +7,16 @@ export default class NavMobile extends Component {
 
     $(document).ready(function () {
 
-      $('#bars').click(function() {
+      $('#nav-mobile-bot-clickable-area-1').click(function() {
         $('#nav-mobile-menu').css('display', 'flex')
-        $('#times').css('display', 'inline')
-        $('#bars').css('display', 'none')
+        $('#nav-mobile-bot-clickable-area-2').css('display', 'flex')
+        $('#nav-mobile-bot-clickable-area-1').css('display', 'none')
       })
 
-      $('#times').click(function() {
+      $('#nav-mobile-bot-clickable-area-2, #sidebar-home, #sidebar-wheretobuy, #sidebar-abouttheauthor, #sidebar-contact').click(function() {
         $('#nav-mobile-menu').css('display', 'none')
-        $('#times').css('display', 'none')
-        $('#bars').css('display', 'inline')
+        $('#nav-mobile-bot-clickable-area-2').css('display', 'none')
+        $('#nav-mobile-bot-clickable-area-1').css('display', 'flex')
       })
 
     })
@@ -25,14 +25,30 @@ export default class NavMobile extends Component {
       <>
         <div id='nav-mobile-container'>
           <div id='nav-mobile-top'>
-            <span id='nav-mobile-title'>Born Again Man Whore</span>
-            <span id='nav-mobile-author'>Marc Special</span>
+            <div id='nav-mobile-top-1'>
+              <span id='nav-mobile-title-1'>BORN AGAIN</span>
+              <span id='nav-mobile-title-2'>MAN-WHORE</span>
+            </div>
+            <div id='nav-mobile-top-2'>
+              <span id='nav-mobile-author'>Marc Special</span>
+            </div>
           </div>
           <div id='nav-mobile-bot'>
-            <div id='nav-mobile-bot-clickable-area'>
-              <span>Menu</span>
-              <i className="fas fa-bars" id='bars'></i>
-              <i className="fas fa-times" id='times'></i>
+            <div id='nav-mobile-bot-clickable-area-1'>
+              <div className='nav-mobile-menu-span'>
+                <span>Menu</span>
+              </div>
+              <div className='nav-mobile-menu-icon'>
+                <i className="fas fa-bars" id='bars'></i>
+              </div>
+            </div>
+            <div id='nav-mobile-bot-clickable-area-2'>
+              <div className='nav-mobile-menu-span'>
+                <span>Menu</span>
+              </div>
+              <div className='nav-mobile-menu-icon'>
+                <i className="fas fa-times" id='times'></i>
+              </div>
             </div>
           </div>
           <div id='nav-mobile-menu'>

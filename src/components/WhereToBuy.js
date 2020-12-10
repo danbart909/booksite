@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import home from '../images/home.jpg'
+
 
 export default class WhereToBuy extends Component {
   render() {

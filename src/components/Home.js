@@ -2,9 +2,9 @@ import React, { Component } from 'react'
 import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
 import home from '../images/home.jpg'
-import comingsoon from '../images/comingsoon.jpg'
-import frontandback from '../images/frontandback.jpg'
-import multi from '../images/multi.jpg'
+// import comingsoon from '../images/comingsoon.jpg'
+// import frontandback from '../images/frontandback.jpg'
+// import multi from '../images/multi.jpg'
 
 export default class Body extends Component {
   render() {
@@ -20,6 +20,7 @@ export default class Body extends Component {
           touchEnabled={true}
           dragEnabled={false}
           isPlaying={true}
+          interval={3000}
         >
           <ButtonBack>Back</ButtonBack>
           <Slider className='slide-container'>
