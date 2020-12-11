@@ -1,3 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Noto+Sans&Merriweather+Sans:wght@300&family=PT+Sans&family=Nunito:wght@300&family=Nunito+Sans:wght@300&family=Lora&family=Rubik:wght@300&family=Barlow+Condensed&family=Arvo&family=Lato:wght@300&family=Source+Sans+Pro&family=Open+Sans&display=swap');
+
+/*
+Oswald
+Noto Sans
+Merriweather Sans
+PT Sans
+Nunito
+Nunito Sans
+Lora
+Rubik
+Barlow Condensed
+Arvo
+Lato
+Source Sans Pro
+Open Sans
+*/
+
 * {
   box-sizing: border-box;
 }
@@ -18,7 +36,8 @@ html {
 }
 
 #overlord-body {
-  background-color: lightcyan;
+  color: white;
+  background-color: black;
 }
 
 
@@ -38,7 +57,8 @@ html {
 }
 
 #nav-mobile-container {
-  background-color: lightgray;
+  color: white;
+  background-color: black;
   height: 25vh;
   display: flex;
   flex-direction: column;
@@ -65,6 +85,7 @@ html {
   font-size: 355%;
   text-align: center;
   line-height: 100%;
+  font-family: 'Oswald', sans-serif;
   padding: 0.5% 0 0 0;
 }
 
@@ -114,31 +135,21 @@ html {
 #nav-mobile-bot-clickable-area-2 {
   width: 120px;
   display: none;
-  /* justify-content: space-evenly;
-  align-items: center; */
 }
 
 .nav-mobile-menu-span {
   width: 70%;
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
 }
 
 .nav-mobile-menu-icon {
   width: 30%;
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
 }
 
 #bars {
-  /* outline: 1px solid black; */
   display: flex;
 }
 
 #times {
-  /* outline: 1px solid black; */
   display: flex;
 }
 
@@ -147,7 +158,7 @@ html {
   justify-self: center;
   justify-content: center;
   position: fixed;
-  top: 34vh;
+  top: 25vh;
   height: 300px;
   width: 60%;
   transition: 0.4s;
@@ -271,6 +282,56 @@ html {
 
 #wheretobuy-container {
   height: 59vw;
+  color: white;
+  background-color: black;
+}
+
+#wtb-box {
+
+}
+
+#wtb-title {
+  
+}
+
+#wtb-retailers {
+  
+}
+
+#wtb-amazon {
+  
+}
+
+#wtb-amazon-left {
+  
+}
+
+#wtb-amazon-right {
+  
+}
+
+#wtb-bn {
+  
+}
+
+#wtb-bn-left {
+  
+}
+
+#wtb-bn-right {
+  
+}
+
+#wtb-anything {
+  
+}
+
+#wtb-anything-left {
+  
+}
+
+#wtb-anything-right {
+  
 }
 
 
@@ -286,8 +347,37 @@ html {
 
 
 #abouttheauthor-container {
-  height: 59vw;
-  background-color: lightgoldenrodyellow;
+  height: 40vh;
+  color: white;
+  background-color: black;
+}
+
+#ata-1 {
+
+}
+
+#ata-title {
+
+}
+
+#ata-2 {
+  
+}
+
+#ata-textbody {
+  font-size: 12px;
+}
+
+#ata-text-1 {
+
+}
+
+#ata-text-2 {
+
+}
+
+#ata-authorpic {
+
 }
 
 
@@ -304,7 +394,8 @@ html {
 
 #contact-container {
   height: 59vw;
-  background-color: lightgreen;
+  color: white;
+  background-color: black;
 }
 
 
@@ -321,7 +412,7 @@ html {
 
 #overlord-footer {
   color: white;
-  background-color: black;
+  background-color: #221e1e;
   height: 59vh;
 }
 
@@ -357,7 +448,8 @@ html {
 
 
   #nav-container {
-    background-color: gray;
+    color: white;
+    background-color: black;
     display: flex;
     height: 25vh;
     display: flex;
@@ -388,6 +480,7 @@ html {
     text-align: center;
     line-height: 100%;
     padding: 0.5% 0 0 0;
+    font-family: 'Oswald', sans-serif;
   }
 
   #nav-top-2 {
@@ -425,6 +518,7 @@ html {
     justify-content: center;
     align-items: center;
     font-size: 140%;
+    font-family: 'Noto Sans', sans-serif;
   }
 
   #nav-bot-clickable-area {
@@ -447,6 +541,226 @@ html {
     background-color: black;
     color: white;
     transition: 0.3s;
+  }
+
+
+
+
+
+  /************************************/
+  /*************** Home ***************/
+  /************************************/
+
+
+
+
+
+
+  #body-container {
+    display: flex;
+  }
+
+  #carousel-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+  }
+
+  .slide-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .carousel-slide {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .slide {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+
+  .slide img {
+    height: auto;
+    width: 100%;
+  }
+
+  #home {
+    background-image: url("./images/home.jpg");
+  }
+
+  #comingsoon {
+    background-image: url("./images/comingsoon.jpg");
+  }
+
+  #bookjacket {
+    background-image: url("./images/frontandback.jpg");
+  }
+
+  #multi {
+    background-image: url("./images/multi.jpg");
+  }
+
+  #placeholder {
+    visibility: hidden;
+  }
+
+
+
+
+
+  /******************************************/
+  /*************** WhereToBuy ***************/
+  /******************************************/
+
+
+
+
+
+  #wheretobuy-container {
+    height: 59vw;
+    color: white;
+    background-color: black;
+  }
+
+  #wtb-box {
+
+  }
+
+  #wtb-title {
+    
+  }
+
+  #wtb-retailers {
+    
+  }
+
+  #wtb-amazon {
+    
+  }
+
+  #wtb-amazon-left {
+    
+  }
+
+  #wtb-amazon-right {
+    
+  }
+
+  #wtb-bn {
+    
+  }
+
+  #wtb-bn-left {
+    
+  }
+
+  #wtb-bn-right {
+    
+  }
+
+  #wtb-anything {
+    
+  }
+
+  #wtb-anything-left {
+    
+  }
+
+  #wtb-anything-right {
+    
+  }
+
+
+
+
+
+  /**********************************************/
+  /*************** AboutTheAuthor ***************/
+  /**********************************************/
+
+
+
+
+
+  #abouttheauthor-container {
+    height: 40vh;
+    color: white;
+    background-color: black;
+  }
+  
+  #ata-1 {
+  
+  }
+  
+  #ata-title {
+  
+  }
+  
+  #ata-2 {
+    
+  }
+
+  #ata-textbody {
+    font-size: calc(16px + 16 * ((100vw - 720px) / 1600));
+  }
+  
+  #ata-text-1 {
+
+  }
+
+  #ata-text-2 {
+    margin: 15px 0 0 0;
+  }
+
+  #ata-authorpic {
+
+  }
+  
+
+
+
+
+  /***************************************/
+  /*************** Contact ***************/
+  /***************************************/
+
+
+
+
+
+  #contact-container {
+    height: 59vw;
+    color: white;
+    background-color: black;
+  }
+
+
+
+
+
+  /**************************************/
+  /*************** Footer ***************/
+  /**************************************/
+
+
+
+
+
+  #overlord-footer {
+    color: white;
+    background-color: #221e1e;
+    height: 59vh;
   }
 
 }
