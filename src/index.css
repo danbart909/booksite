@@ -257,11 +257,17 @@ html {
 }
 
 #backbutton {
-
+  position: absolute;
+  top: 50%;
+  left: 1px;
+  z-index: 2;
 }
 
 #nextbutton {
-  
+  position: absolute;
+  top: 50%;
+  right: 1px;
+  z-index: 2;
 }
 
 #home {
