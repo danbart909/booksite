@@ -62,8 +62,8 @@ export default class NavMobile extends Component {
               <NavLink to='/AboutTheAuthor' activeClassName='sidebar-is-active' id='sidebar-abouttheauthor'>
                 About the Author
               </NavLink>
-              <NavLink to='/Contact' activeClassName='sidebar-is-active' id='sidebar-contact'>
-                Contact
+              <NavLink to='/Excerpt' activeClassName='sidebar-is-active' id='sidebar-excerpt'>
+              Excerpt
               </NavLink>
             </div>
           </div>

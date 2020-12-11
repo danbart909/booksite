@@ -26,7 +26,7 @@ export default class Nav extends Component {
             <NavLink to='/AboutTheAuthor' activeClassName='is-active' id='nav-abouttheauthor'>
               About the Author
             </NavLink>
-            <NavLink to='/Contact' activeClassName='is-active' id='nav-contact'>
+            <NavLink to='/Excerpt' activeClassName='is-active' id='nav-excerpt'>
               Contact
             </NavLink>
           </div>

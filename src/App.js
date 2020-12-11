@@ -5,7 +5,7 @@ import NavMobile from './components/NavMobile.js';
 import Home from './components/Home.js';
 import WhereToBuy from './components/WhereToBuy.js'
 import AboutTheAuthor from './components/AboutTheAuthor.js'
-import Contact from './components/Contact.js'
+import Excerpt from './components/Excerpt.js'
 import $ from 'jquery';
 
 export default class App extends Component {
@@ -30,7 +30,7 @@ export default class App extends Component {
             <Route exact path='/' component={Home} />
             <Route path='/WhereToBuy' component={WhereToBuy} />
             <Route path='/AboutTheAuthor' component={AboutTheAuthor} />
-            <Route path='/Contact' component={Contact} />
+            <Route path='/Excerpt' component={Excerpt} />
           </Switch>
         </div>
         <div id='overlord-footer'>

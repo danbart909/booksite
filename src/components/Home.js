@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
+import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext, Dot, DotGroup, ButtonPlay } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
 import home from '../images/home.jpg'
 // import comingsoon from '../images/comingsoon.jpg'
@@ -22,7 +22,13 @@ export default class Body extends Component {
           isPlaying={true}
           interval={3000}
         >
-          <ButtonBack>Back</ButtonBack>
+          <ButtonBack id='backbutton'>
+            <span>Back</span>
+          </ButtonBack>
+          <DotGroup id='dotgroup'/>
+          <ButtonPlay id='playbutton'>
+            <span>Play</span>
+          </ButtonPlay>
           <Slider className='slide-container'>
             <Slide className='carousel-slide' index={0}>
               {/* <img src={home} id='homeimg' alt='homepage'/> */}
@@ -46,7 +52,9 @@ export default class Body extends Component {
               </div>
             </Slide>
           </Slider>
-          <ButtonNext>Next</ButtonNext>
+          <ButtonNext id='nextbutton'>
+            <span>Next</span>
+          </ButtonNext>
         </CarouselProvider>
       </div>
     )
