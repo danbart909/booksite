@@ -23,7 +23,7 @@ export default class Body extends Component {
           interval={3000}
         >
           <ButtonBack id='backbutton'>
-            <span>Back</span>
+            <i class="fas fa-chevron-circle-left"></i>
           </ButtonBack>
           <DotGroup id='dotgroup'/>
           <ButtonPlay id='playbutton'>
@@ -53,7 +53,7 @@ export default class Body extends Component {
             </Slide>
           </Slider>
           <ButtonNext id='nextbutton'>
-            <span>Next</span>
+            <i class="fas fa-chevron-circle-right"></i>
           </ButtonNext>
         </CarouselProvider>
       </div>

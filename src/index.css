@@ -162,7 +162,7 @@ html {
   height: 300px;
   width: 60%;
   transition: 0.4s;
-  z-index: 1;
+  z-index: 3;
 }
 
 #sidebar {
@@ -257,16 +257,20 @@ html {
 }
 
 #backbutton {
+  background-color: transparent;
   position: absolute;
-  top: 50%;
-  left: 1px;
+  top: 46%;
+  height: 10%;
+  left: 2%;
   z-index: 2;
 }
 
 #nextbutton {
+  background-color: transparent;
   position: absolute;
-  top: 50%;
-  right: 1px;
+  top: 46%;
+  height: 10%;
+  right: 2%;
   z-index: 2;
 }
 
@@ -615,6 +619,24 @@ html {
   .slide img {
     height: auto;
     width: 100%;
+  }
+  
+  #backbutton {
+    background-color: transparent;
+    position: absolute;
+    top: 46%;
+    height: 10%;
+    left: 2%;
+    z-index: 2;
+  }
+  
+  #nextbutton {
+    background-color: transparent;
+    position: absolute;
+    top: 46%;
+    height: 10%;
+    right: 2%;
+    z-index: 2;
   }
 
   #home {
