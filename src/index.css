@@ -473,7 +473,8 @@ html {
 
 
 #excerpt-container {
-  height: 59vh;
+  /* height: 59vh; */
+  height: 465px;
   color: white;
   background-color: black;
 }
