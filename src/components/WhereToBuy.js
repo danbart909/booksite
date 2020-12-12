@@ -6,37 +6,35 @@ export default class WhereToBuy extends Component {
   render() {
     return (
       <div id='wheretobuy-container'>
-        {/* <div id='wtb-box'>
-          <div id='wtb-title'>
-            <span>Purchase from:</span>
-          </div>
-          <div id='wtb-retailers'>
-            <div id='wtb-amazon'>
-              <div id='wtb-amazon-left'>
-                <span>Buy from Amazon</span>
-              </div>
-              <div id='wtb-amazon-right'>
-                <span>*img*</span>
-              </div>
+        <div id='wtb-title'>
+          <span>Purchase Options</span>
+        </div>
+        <div id='wtb-box'>
+          <div id='wtb-amazon' className='gridbox-container'>
+            <div id='wtb-amazon-left' className='gridbox'>
+              <span>Buy from Amazon</span>
             </div>
-            <div id='wtb-bn'>
-              <div id='wtb-bn-left'>
-                <span>Buy from Barnes & Noble</span>
-              </div>
-              <div id='wtb-bn-right'>
-                <span>*img*</span>
-              </div>
-            </div>
-            <div id='wtb-anything'>
-              <div id='wtb-anything-left'>
-                <span>Buy from The Black Web</span>
-              </div>
-              <div id='wtb-anything-right'>
-                <span>*img*</span>
-              </div>
+            <div id='wtb-amazon-right' className='gridbox'>
+              <span>*img*</span>
             </div>
           </div>
-        </div> */}
+          <div id='wtb-bn' className='gridbox-container'>
+            <div id='wtb-bn-left' className='gridbox'>
+              <span>Buy from Barnes & Noble</span>
+            </div>
+            <div id='wtb-bn-right' className='gridbox'>
+              <span>*img*</span>
+            </div>
+          </div>
+          <div id='wtb-anything' className='gridbox-container'>
+            <div id='wtb-anything-left' className='gridbox'>
+              <span>Buy from The Black Web</span>
+            </div>
+            <div id='wtb-anything-right' className='gridbox'>
+              <span>*img*</span>
+            </div>
+          </div>
+        </div>
       </div>
     )
   }

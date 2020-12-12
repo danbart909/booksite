@@ -13,7 +13,7 @@ export default class NavMobile extends Component {
         $('#nav-mobile-bot-clickable-area-1').css('display', 'none')
       })
 
-      $('#nav-mobile-bot-clickable-area-2, #sidebar-home, #sidebar-wheretobuy, #sidebar-abouttheauthor, #sidebar-contact').click(function() {
+      $('#nav-mobile-bot-clickable-area-2, #sidebar-home, #sidebar-wheretobuy, #sidebar-abouttheauthor, #sidebar-excerpt').click(function() {
         $('#nav-mobile-menu').css('display', 'none')
         $('#nav-mobile-bot-clickable-area-2').css('display', 'none')
         $('#nav-mobile-bot-clickable-area-1').css('display', 'flex')

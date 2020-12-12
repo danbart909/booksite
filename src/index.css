@@ -16,6 +16,12 @@ Source Sans Pro
 Open Sans
 */
 
+@keyframes popIn {
+  100% {
+    transform: scale(1.3);
+  }
+}
+
 * {
   box-sizing: border-box;
 }
@@ -114,6 +120,8 @@ html {
 }
 
 #nav-mobile-author {
+  font-size: 18px;
+  margin: 2% 0 0 0;
 }
 
 #nav-mobile-bot {
@@ -121,7 +129,7 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 180%;
+  font-size: 24px;
   width: 100%;
 }
 
@@ -258,23 +266,34 @@ html {
 
 #backbutton {
   background-color: transparent;
+  border-radius: 50%;
   position: absolute;
   top: 46%;
-  height: 10%;
+  height: 30px;
   left: 2%;
   z-index: 2;
+  transition: 0.4s;
+}
+
+#backbutton:hover {
+  animation: .4s ease-out 0s 1 popIn forwards;
 }
 
 #nextbutton {
   background-color: transparent;
+  border-radius: 50%;
   position: absolute;
   top: 46%;
-  height: 10%;
+  height: 30px;
   right: 2%;
   z-index: 2;
 }
 
-#home {
+#nextbutton:hover {
+  animation: .4s ease-out 0s 1 popIn forwards;
+}
+
+/* #home {
   background-image: url("./images/home.jpg");
 }
 
@@ -292,7 +311,7 @@ html {
 
 #placeholder {
   visibility: hidden;
-}
+} */
 
 
 
@@ -307,57 +326,91 @@ html {
 
 
 #wheretobuy-container {
-  height: 59vw;
+  outline: 1px solid white;
+  height: 75vh;
   color: white;
   background-color: black;
-}
-
-#wtb-box {
-
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 #wtb-title {
-  
+  font-size: 20px;
 }
 
-#wtb-retailers {
-  
+#wtb-box {
+  outline: 1px solid white;
+  width: 80%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0 0 2% 0;
+}
+
+.gridbox-container {
+  outline: 1px solid white;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 90%;
+  height: 25%;
+  transition: .3s;
+}
+
+.gridbox-container:hover {
+  color: black;
+  background-color: white;
+  transition: .3s;
+}
+
+.gridbox {
+  outline: 1px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 50%;
+  height: 100%;
 }
 
 #wtb-amazon {
-  
+
 }
 
 #wtb-amazon-left {
-  
+  padding: 5%;
 }
 
 #wtb-amazon-right {
-  
+
 }
 
 #wtb-bn {
-  
+
 }
 
 #wtb-bn-left {
-  
+  padding: 5%;
 }
 
 #wtb-bn-right {
-  
+
 }
 
 #wtb-anything {
-  
+
 }
 
 #wtb-anything-left {
-  
+  padding: 5%;
 }
 
 #wtb-anything-right {
-  
+
 }
 
 
@@ -373,9 +426,10 @@ html {
 
 
 #abouttheauthor-container {
-  height: 40vh;
   color: white;
   background-color: black;
+  display: flex;
+  flex-direction: column;
 }
 
 #ata-1 {
@@ -391,7 +445,7 @@ html {
 }
 
 #ata-textbody {
-  font-size: 12px;
+  font-size: 18px;
 }
 
 #ata-text-1 {
@@ -411,15 +465,15 @@ html {
 
 
 /***************************************/
-/*************** Contact ***************/
+/*************** Excerpt ***************/
 /***************************************/
 
 
 
 
 
-#contact-container {
-  height: 59vw;
+#excerpt-container {
+  height: 59vh;
   color: white;
   background-color: black;
 }
@@ -620,44 +674,6 @@ html {
     height: auto;
     width: 100%;
   }
-  
-  #backbutton {
-    background-color: transparent;
-    position: absolute;
-    top: 46%;
-    height: 10%;
-    left: 2%;
-    z-index: 2;
-  }
-  
-  #nextbutton {
-    background-color: transparent;
-    position: absolute;
-    top: 46%;
-    height: 10%;
-    right: 2%;
-    z-index: 2;
-  }
-
-  #home {
-    background-image: url("./images/home.jpg");
-  }
-
-  #comingsoon {
-    background-image: url("./images/comingsoon.jpg");
-  }
-
-  #bookjacket {
-    background-image: url("./images/frontandback.jpg");
-  }
-
-  #multi {
-    background-image: url("./images/multi.jpg");
-  }
-
-  #placeholder {
-    visibility: hidden;
-  }
 
 
 
@@ -672,37 +688,52 @@ html {
 
 
   #wheretobuy-container {
+    outline: 1px solid white;
     height: 59vw;
     color: white;
     background-color: black;
-  }
-
-  #wtb-box {
-
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
   }
 
   #wtb-title {
     
   }
 
-  #wtb-retailers {
-    
+  #wtb-box {
+    outline: 1px solid white;
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
   }
 
   #wtb-amazon {
-    
+    outline: 1px solid white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 90%;
   }
 
   #wtb-amazon-left {
-    
+    width: 50%;
   }
 
   #wtb-amazon-right {
-    
+    width: 50%;
   }
 
   #wtb-bn {
-    
+    outline: 1px solid white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 90%;
   }
 
   #wtb-bn-left {
@@ -714,7 +745,11 @@ html {
   }
 
   #wtb-anything {
-    
+    outline: 1px solid white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 90%;
   }
 
   #wtb-anything-left {
@@ -738,7 +773,7 @@ html {
 
 
   #abouttheauthor-container {
-    height: 40vh;
+    height: 59vw;
     color: white;
     background-color: black;
   }
@@ -776,14 +811,14 @@ html {
 
 
   /***************************************/
-  /*************** Contact ***************/
+  /*************** Excerpt ***************/
   /***************************************/
 
 
 
 
 
-  #contact-container {
+  #excerpt-container {
     height: 59vw;
     color: white;
     background-color: black;
