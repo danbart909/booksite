@@ -27,7 +27,7 @@ export default class Body extends Component {
             <i class="fas fa-chevron-circle-left" />
           </ButtonBack>
           <DotGroup id='dotgroup' />
-          <ButtonPlay childrenPaused={<i class="far fa-play-circle"/>} id='playbutton' />
+          <ButtonPlay childrenPaused={<i class="fas fa-play-circle"/>} childrenPlaying={<i class="fas fa-pause-circle"/>} id='playbutton' />
           <Slider className='slide-container'>
             <Slide className='carousel-slide' index={0}>
               <div className='slide' id='home'>

@@ -39,11 +39,12 @@ html {
 
 #overlord {
   min-width: 360px;
+  color: white;
+  background-color: black;
 }
 
 #overlord-body {
-  color: white;
-  background-color: black;
+  margin: 2% 0 0 0;
 }
 
 .nodisplay {
@@ -69,7 +70,7 @@ html {
 #nav-mobile-container {
   color: white;
   background-color: black;
-  height: 25vh;
+  height: 28vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -124,8 +125,8 @@ html {
 }
 
 #nav-mobile-author {
-  font-size: 18px;
-  margin: 2% 0 0 0;
+  font-size: calc(20px + 16 * ((100vw - 360px) / 720));
+  margin: 0 0 0 0;
 }
 
 #nav-mobile-bot {
@@ -170,7 +171,7 @@ html {
   justify-self: center;
   justify-content: center;
   position: absolute;
-  top: 25vh;
+  top: 28vh;
   height: 300px;
   width: 60%;
   transition: 0.4s;
@@ -258,9 +259,6 @@ html {
 
 #dotgroup {
   display: none;
-  position: absolute;
-  bottom: 10px;
-  z-index: 2;
 }
 
 .carousel__dot {
@@ -271,12 +269,17 @@ html {
 
 #playbutton {
   position: absolute;
-  top: 10px;
+  bottom: 2px;
   z-index: 2;
   border: none;
   background-color: transparent;
   font-size: 40px;
   transition: 0.4s;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+#playbutton i.fas {
+  color: rgba(255, 255, 255, 0.7);
 }
 
 #backbutton {
@@ -313,6 +316,10 @@ html {
 .slide-container:focus,
 .carousel__dot:focus {
   outline: none;
+}
+
+.carousel__slide-focus-ring {
+  display: none;
 }
 
 /* #home {
@@ -460,7 +467,6 @@ html {
 }
 
 #ata-title {
-  outline: 1px solid white;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -497,7 +503,6 @@ html {
 }
 
 #c-title {
-  outline: 1px solid white;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -508,7 +513,6 @@ html {
 }
 
 #c-body {
-  /* outline: 1px solid white; */
   /* display: flex; */
   /* justify-content: center; */
   /* align-items: center; */
@@ -517,7 +521,6 @@ html {
 }
 
 #c-box {
-  /* outline: 1px solid white; */
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -630,6 +633,10 @@ html {
 
 
 
+  #overlord-body {
+    margin: 0 0 0 0;
+  }
+
   /************************************/
   /*************** Nav ***************/
   /***********************************/
@@ -642,7 +649,7 @@ html {
     color: white;
     background-color: black;
     display: flex;
-    height: 25vh;
+    height: 28vh;
     display: flex;
     flex-direction: column;
   }
@@ -695,12 +702,14 @@ html {
   } */
   
   #nav-author {
+    margin: 5px 0 0 0;
     height: 30%;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 100%;
+    /* font-size: calc(28px + 10 * ((100vw - 720px) / 1600)); */
+    font-size: 28px;
   }
 
   #nav-bot {
@@ -791,6 +800,10 @@ html {
     position: absolute;
     bottom: 10px;
     z-index: 2;
+  }
+
+  #playbutton {
+    bottom: 28px;
   }
 
 
