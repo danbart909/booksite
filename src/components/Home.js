@@ -11,48 +11,47 @@ export default class Body extends Component {
     return (
       <div id='body-container'>
         <CarouselProvider
+          isPlaying
           naturalSlideWidth={125}
           naturalSlideHeight={100}
           totalSlides={4}
-          isIntrinsicHeight={true}
+          isIntrinsicHeight
           id='carousel-container'
-          infinite={true}
-          touchEnabled={true}
+          infinite
+          touchEnabled
           dragEnabled={false}
-          isPlaying={true}
           interval={3000}
+          hasMasterSpinner
         >
           <ButtonBack id='backbutton'>
-            <i class="fas fa-chevron-circle-left"></i>
+            <i class="fas fa-chevron-circle-left" />
           </ButtonBack>
-          <DotGroup id='dotgroup'/>
-          <ButtonPlay id='playbutton'>
-            <span>Play</span>
-          </ButtonPlay>
+          <DotGroup id='dotgroup' />
+          <ButtonPlay childrenPaused={<i class="far fa-play-circle"/>} id='playbutton' />
           <Slider className='slide-container'>
             <Slide className='carousel-slide' index={0}>
               <div className='slide' id='home'>
-                <Image src={home} id='homeimg' alt='homepage' hasMasterSpinner={true} isBgImage={true}/>
+                <Image src={home} id='homeimg' alt='homepage' isBgImage={true} />
               </div>
             </Slide>
             <Slide className='carousel-slide' index={1}>
               <div className='slide' id='comingsoon'>
-                <Image src={comingsoon} id='comingsoonimg' alt='comingsoon' hasMasterSpinner={true} isBgImage={true}/>
+                <Image src={comingsoon} id='comingsoonimg' alt='comingsoon' isBgImage={true} />
               </div>
             </Slide>
             <Slide className='carousel-slide' index={2}>
               <div className='slide' id='bookjacket'>
-                <Image src={frontandback} id='bookjacketimg' alt='book jacket' hasMasterSpinner={true} isBgImage={true}/>
+                <Image src={frontandback} id='bookjacketimg' alt='book jacket' isBgImage={true} />
               </div>
             </Slide>
             <Slide className='carousel-slide' index={3}>
               <div className='slide' id='multi'>
-                <Image src={multi} id='multiimg' alt='multi' hasMasterSpinner={true} isBgImage={true}/>
+                <Image src={multi} id='multiimg' alt='multi' isBgImage={true} />
               </div>
             </Slide>
           </Slider>
           <ButtonNext id='nextbutton'>
-            <i class="fas fa-chevron-circle-right"></i>
+            <i class="fas fa-chevron-circle-right" />
           </ButtonNext>
         </CarouselProvider>
       </div>
@@ -60,7 +59,10 @@ export default class Body extends Component {
   }
 }
 
-{/* <img src={home} id='placeholder' alt='placeholder'/> */}
+
+// childrenPlaying={<i class="far fa-play-circle nodisplay"/>}
+// <i class="far fa-play-circle" />
+// <img src={home} id='placeholder' alt='placeholder' />
 
 
 
