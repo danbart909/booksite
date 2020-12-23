@@ -12,14 +12,14 @@ export default class Body extends Component {
       <div id='body-container'>
         <CarouselProvider
           isPlaying
-          naturalSlideWidth={125}
+          naturalSlideWidth={100}
           naturalSlideHeight={100}
           totalSlides={4}
           isIntrinsicHeight
           id='carousel-container'
           infinite
           touchEnabled
-          dragEnabled={false}
+          dragEnabled
           interval={3000}
           hasMasterSpinner
         >
