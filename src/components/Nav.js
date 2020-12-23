@@ -17,17 +17,17 @@ export default class Nav extends Component {
         </div>
         <div id='nav-bot'>
           <div id='nav-bot-clickable-area'>
-            <NavLink to='/' exact={true} activeClassName='is-active' id='nav-home'>
-              Home
+            <NavLink to='/' exact={true} activeClassName='nav-home-active' id='nav-home'>
+              <span>HOME</span>
             </NavLink>
-            <NavLink to='/WhereToBuy' activeClassName='is-active' id='nav-wheretobuy'>
-              Where to Buy
+            <NavLink to='/WhereToBuy' activeClassName='nav-wheretobuy-active' id='nav-wheretobuy'>
+              <span>WHERE TO BUY</span>
             </NavLink>
-            <NavLink to='/AboutTheAuthor' activeClassName='is-active' id='nav-abouttheauthor'>
-              About the Author
+            <NavLink to='/AboutTheAuthor' activeClassName='nav-abouttheauthor-active' id='nav-abouttheauthor'>
+              <span>ABOUT THE AUTHOR</span>
             </NavLink>
-            <NavLink to='/Excerpt' activeClassName='is-active' id='nav-excerpt'>
-              Excerpt
+            <NavLink to='/Excerpt' activeClassName='nav-excerpt-active' id='nav-excerpt'>
+              <span>EXCERPT</span>
             </NavLink>
           </div>
         </div>

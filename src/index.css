@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Noto+Sans&Merriweather+Sans:wght@300&family=PT+Sans&family=Nunito:wght@300&family=Nunito+Sans:wght@300&family=Lora&family=Rubik:wght@300&family=Barlow+Condensed&family=Arvo&family=Lato:wght@300&family=Source+Sans+Pro&family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Noto+Sans&Merriweather+Sans:wght@300&family=PT+Sans&family=Nunito:wght@300&family=Nunito+Sans:wght@300&family=Lora&family=Rubik:wght@300&family=Barlow+Condensed&family=Lato:wght@300&family=Source+Sans+Pro&family=Open+Sans&display=swap');
 
 /*
 Oswald
@@ -10,7 +10,6 @@ Nunito Sans
 Lora
 Rubik
 Barlow Condensed
-Arvo
 Lato
 Source Sans Pro
 Open Sans
@@ -19,6 +18,18 @@ Open Sans
 @keyframes popIn {
   100% {
     transform: scale(1.3);
+  }
+}
+
+@keyframes fadeIn {
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes menuDrop {
+  100% {
+    height: 300px;
   }
 }
 
@@ -125,8 +136,9 @@ html {
 }
 
 #nav-mobile-author {
+  font-family: 'Lora', sans-serif;
   font-size: calc(20px + 16 * ((100vw - 360px) / 720));
-  margin: 0 0 0 0;
+  margin: 3px 0 0 0;
 }
 
 #nav-mobile-bot {
@@ -147,11 +159,14 @@ html {
 
 #nav-mobile-bot-clickable-area-2 {
   width: 120px;
-  display: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .nav-mobile-menu-span {
   width: 70%;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .nav-mobile-menu-icon {
@@ -167,15 +182,18 @@ html {
 }
 
 #nav-mobile-menu {
-  display: none;
+  animation: .3s ease-out 0s 1 menuDrop forwards;
+  display: flex;
   justify-self: center;
   justify-content: center;
-  position: absolute;
-  top: 28vh;
-  height: 300px;
+  position: fixed;
+  top: 29vh;
+  height: 0;
   width: 60%;
   transition: 0.4s;
-  z-index: 3;
+  z-index: 8;
+  font-family: 'Source Sans Pro', sans-serif;
+  border: 1px solid white;
 }
 
 #sidebar {
@@ -187,6 +205,7 @@ html {
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+  transition: 0.4s;
 }
 
 #sidebar a {
@@ -200,6 +219,8 @@ html {
   transition: 0.3s;
   font-size: 20px;
   border: 1px solid transparent;
+  opacity: 0;
+  animation: .2s ease-out .4s 1 fadeIn forwards;
 }
 
 #sidebar a:hover {
@@ -207,6 +228,54 @@ html {
   background-color: white;
   transition: 0.3s;
   border: 1px solid black;
+}
+
+.nav-home-active, #nav-home:hover {
+  transition: 0.3s;
+  text-shadow:
+    0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 30px #e60073,
+    0 0 40px #e60073,
+    0 0 50px #e60073,
+    0 0 60px #e60073,
+    0 0 70px #e60073;
+}
+
+.nav-wheretobuy-active, #nav-wheretobuy:hover {
+  transition: 0.3s;
+  text-shadow:
+    0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 30px #00e6c4,
+    0 0 40px #00e6c4,
+    0 0 50px #00e6c4,
+    0 0 60px #00e6c4,
+    0 0 70px #00e6c4;
+}
+
+.nav-abouttheauthor-active, #nav-abouttheauthor:hover {
+  transition: 0.3s;
+  text-shadow:
+    0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 30px #00b4e6,
+    0 0 40px #00b4e6,
+    0 0 50px #00b4e6,
+    0 0 60px #00b4e6,
+    0 0 70px #00b4e6;
+}
+
+.nav-excerpt-active, #nav-excerpt:hover {
+  transition: 0.3s;
+  text-shadow:
+    0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 30px #e6e200,
+    0 0 40px #e6e200,
+    0 0 50px #e6e200,
+    0 0 60px #e6e200,
+    0 0 70px #e6e200;
 }
 
 
@@ -224,6 +293,8 @@ html {
 
 #body-container {
   display: flex;
+  outline: 1px solid white;
+
 }
 
 #carousel-container {
@@ -460,6 +531,7 @@ html {
   display: flex;
   flex-direction: column;
   font-family: 'Lora', sans-serif;
+  outline: 1px solid white;
 }
 
 #ata-1 {
@@ -590,6 +662,7 @@ html {
   height: 465px;
   color: white;
   background-color: black;
+  outline: 1px solid white;
 }
 
 
@@ -636,6 +709,10 @@ html {
   #overlord-body {
     margin: 0 0 0 0;
   }
+
+
+
+
 
   /************************************/
   /*************** Nav ***************/
@@ -710,6 +787,7 @@ html {
     align-items: center;
     /* font-size: calc(28px + 10 * ((100vw - 720px) / 1600)); */
     font-size: 28px;
+    font-family: 'Lora', sans-serif;
   }
 
   #nav-bot {
@@ -718,7 +796,7 @@ html {
     justify-content: center;
     align-items: center;
     font-size: 140%;
-    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
   }
 
   #nav-bot-clickable-area {
@@ -732,15 +810,16 @@ html {
   #nav-bot-clickable-area a {
     padding: 5px;
     text-decoration: none;
-    color: black;
-    background-color: white;
+    /* color: black;
+    background-color: white; */
     transition: 0.3s;
+    background-color: black;
+    color: white;
   }
 
   #nav-bot-clickable-area a:hover {
-    background-color: black;
-    color: white;
-    transition: 0.3s;
+    /* background-color: black;
+    color: white; */
   }
 
 
@@ -904,9 +983,7 @@ html {
 
 
   #abouttheauthor-container {
-    /* height: 59vw; */
-    color: white;
-    background-color: black;
+
   }
   
   #ata-1 {

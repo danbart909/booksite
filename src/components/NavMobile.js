@@ -3,23 +3,24 @@ import { NavLink } from 'react-router-dom'
 import $ from 'jquery';
 
 export default class NavMobile extends Component {
+
   render() {
 
-    $(document).ready(function () {
+    // $(document).ready(function () {
 
-      $('#nav-mobile-bot-clickable-area-1').click(function() {
-        $('#nav-mobile-menu').css('display', 'flex')
-        $('#nav-mobile-bot-clickable-area-2').css('display', 'flex')
-        $('#nav-mobile-bot-clickable-area-1').css('display', 'none')
-      })
+    //   $('#nav-mobile-bot-clickable-area-1').click(function() {
+    //     $('#nav-mobile-menu').css('display', 'flex')
+    //     $('#nav-mobile-bot-clickable-area-2').css('display', 'flex')
+    //     $('#nav-mobile-bot-clickable-area-1').css('display', 'none')
+    //   })
 
-      $('#nav-mobile-bot-clickable-area-2, #sidebar-home, #sidebar-wheretobuy, #sidebar-abouttheauthor, #sidebar-excerpt').click(function() {
-        $('#nav-mobile-menu').css('display', 'none')
-        $('#nav-mobile-bot-clickable-area-2').css('display', 'none')
-        $('#nav-mobile-bot-clickable-area-1').css('display', 'flex')
-      })
+    //   $('#nav-mobile-bot-clickable-area-2, #sidebar-home, #sidebar-wheretobuy, #sidebar-abouttheauthor, #sidebar-excerpt').click(function() {
+    //     $('#nav-mobile-menu').css('display', 'none')
+    //     $('#nav-mobile-bot-clickable-area-2').css('display', 'none')
+    //     $('#nav-mobile-bot-clickable-area-1').css('display', 'flex')
+    //   })
 
-    })
+    // })
 
     return (
       <>
@@ -34,39 +35,39 @@ export default class NavMobile extends Component {
             </div>
           </div>
           <div id='nav-mobile-bot'>
-            <div id='nav-mobile-bot-clickable-area-1'>
+            { !this.props.menu && <div id='nav-mobile-bot-clickable-area-1' onClick={(e) => {this.props.openMenu(e)}}>
               <div className='nav-mobile-menu-span'>
-                <span>Menu</span>
+                <span>MENU</span>
               </div>
               <div className='nav-mobile-menu-icon'>
-                <i className="fas fa-bars" id='bars'></i>
+                <i className="fas fa-bars" id='bars'/>
               </div>
-            </div>
-            <div id='nav-mobile-bot-clickable-area-2'>
+            </div> }
+            { this.props.menu && <div id='nav-mobile-bot-clickable-area-2'>
               <div className='nav-mobile-menu-span'>
-                <span>Menu</span>
+                <span>MENU</span>
               </div>
               <div className='nav-mobile-menu-icon'>
-                <i className="fas fa-times" id='times'></i>
+                <i className="fas fa-times" id='times'/>
               </div>
-            </div>
+            </div> }
           </div>
-          <div id='nav-mobile-menu'>
+          { this.props.menu && <div id='nav-mobile-menu'>
             <div id='sidebar'>
-              <NavLink to='/' exact={true} activeClassName='sidebar-is-active' id='sidebar-home'>
-                Home
+              <NavLink to='/' exact={true} activeClassName='nav-home-active' id='sidebar-home'>
+                <span>HOME</span>
               </NavLink>
-              <NavLink to='/WhereToBuy' activeClassName='sidebar-is-active' id='sidebar-wheretobuy'>
-                Where to Buy
+              <NavLink to='/WhereToBuy' activeClassName='nav-wheretobuy-active' id='sidebar-wheretobuy'>
+                <span>WHERE TO BUY</span>
               </NavLink>
-              <NavLink to='/AboutTheAuthor' activeClassName='sidebar-is-active' id='sidebar-abouttheauthor'>
-                About the Author
+              <NavLink to='/AboutTheAuthor' activeClassName='nav-abouttheauthor-active' id='sidebar-abouttheauthor'>
+                <span>ABOUT THE AUTHOR</span>
               </NavLink>
-              <NavLink to='/Excerpt' activeClassName='sidebar-is-active' id='sidebar-excerpt'>
-              Excerpt
+              <NavLink to='/Excerpt' activeClassName='nav-excerpt-active' id='sidebar-excerpt'>
+                <span>EXCERPT</span>
               </NavLink>
             </div>
-          </div>
+          </div> }
         </div>
       </>
     )

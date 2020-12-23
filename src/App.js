@@ -6,25 +6,45 @@ import Home from './components/Home.js';
 import WhereToBuy from './components/WhereToBuy.js'
 import AboutTheAuthor from './components/AboutTheAuthor.js'
 import Excerpt from './components/Excerpt.js'
-import $ from 'jquery';
+// import $ from 'jquery';
 
 export default class App extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      menu: false
+    }
+  }
+
+  openMenu = (e) => {
+    e.stopPropagation()
+    this.setState({ menu: true })
+  }
+
+  closeMenu = () => {
+    this.setState({ menu: false })
+  }
+
   render() {
 
-    $(document).ready(function () {
+    // $(document).ready(function () {
 
-      $('#overlord-body').click(function() {
-        $('#nav-mobile-menu').css('display', 'none')
-        $('#times').css('display', 'none')
-        $('#bars').css('display', 'inline')
-      })
+    //   $('#overlord-body').click(function() {
+    //     $('#nav-mobile-menu').css('display', 'none')
+    //     $('#times').css('display', 'none')
+    //     $('#bars').css('display', 'inline')
+    //   })
 
-    })
+    // })
 
     return (
-      <div id='overlord'>
+      <div id='overlord' onClick={this.closeMenu}>
         <Nav/>
-        <NavMobile/>
+        <NavMobile
+          menu={this.state.menu}
+          openMenu={(e) => this.openMenu(e)}
+          closeMenu={this.closeMenu}
+        />
         <div id='overlord-body'>
           <Switch>
             <Route exact path='/' component={Home} />
