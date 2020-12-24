@@ -4,11 +4,11 @@ import React, { Component } from 'react'
 export default class AboutTheAuthor extends Component {
   render() {
     return (
-      <>
-        <div id='abouttheauthor-container'>
+      <div id='abouttheauthor-container'>
+        <div id='ata-container'>
           <div id='ata-1'>
             <div id='ata-title'>
-              <span>About the Author</span>
+              <span>ABOUT THE AUTHOR</span>
             </div>
           </div>
           <div id='ata-2'>
@@ -27,7 +27,7 @@ export default class AboutTheAuthor extends Component {
         </div>
         <div id='c-container'>
           <div id='c-title'>
-            <span>Contact</span>
+            <span>CONTACT</span>
           </div>
           <div id='c-body'>
             <div id='c-box'>
@@ -36,7 +36,7 @@ export default class AboutTheAuthor extends Component {
 
                 <div id='c-phone' className='c-c'>
                   <div id='c-phone-1' className='c-title'>
-                    <span>Call</span>
+                    <span>CALL</span>
                   </div>
                   <div id='c-phone-2' className='c-icon'>
                     <a href='tel:770-873-0803'><i className="fas fa-phone"/></a>
@@ -45,7 +45,7 @@ export default class AboutTheAuthor extends Component {
   
                 <div id='c-text' className='c-c'>
                   <div id='c-text-1' className='c-title'>
-                    <span>Text</span>
+                    <span>TEXT</span>
                   </div>
                   <div id='c-text-2' className='c-icon'>
                     <a href='sms:7708730803'><i className="fas fa-comment-dots"/></a>
@@ -54,7 +54,7 @@ export default class AboutTheAuthor extends Component {
   
                 <div id='c-email' className='c-c'>
                   <div id='c-email-1' className='c-title'>
-                    <span>Email</span>
+                    <span>EMAIL</span>
                   </div>
                   <div id='c-email-2' className='c-icon'>
                     <i class="fas fa-envelope"/>
@@ -67,7 +67,7 @@ export default class AboutTheAuthor extends Component {
 
                 <div id='c-facebook' className='c-c'>
                   <div id='c-facebook-1' className='c-title'>
-                    <span>Facebook</span>
+                    <span>FACEBOOK</span>
                   </div>
                   <div id='c-facebook-2' className='c-icon'>
                     <i class="fab fa-facebook-f"/>
@@ -76,7 +76,7 @@ export default class AboutTheAuthor extends Component {
   
                 <div id='c-twitter' className='c-c'>
                   <div id='c-twitter-1' className='c-title'>
-                    <span>Twitter</span>
+                    <span>TWITTER</span>
                   </div>
                   <div id='c-twitter-2' className='c-icon'>
                     <i class="fab fa-twitter"/>
@@ -85,7 +85,7 @@ export default class AboutTheAuthor extends Component {
   
                 <div id='c-instagram' className='c-c'>
                   <div id='c-instagram-1' className='c-title'>
-                    <span>Instagram</span>
+                    <span>INSTAGRAM</span>
                   </div>
                   <div id='c-instagram-2' className='c-icon'>
                     <i class="fab fa-instagram"/>
@@ -106,7 +106,7 @@ export default class AboutTheAuthor extends Component {
             </div>
           </div>
         </div>
-      </>
+      </div>
     )
   }
 }

@@ -1,18 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Noto+Sans&Merriweather+Sans:wght@300&family=PT+Sans&family=Nunito:wght@300&family=Nunito+Sans:wght@300&family=Lora&family=Rubik:wght@300&family=Barlow+Condensed&family=Lato:wght@300&family=Source+Sans+Pro&family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Nunito:wght@300&family=Nunito+Sans:wght@300&family=Lora&family=Rubik:wght@300&family=Barlow+Condensed&family=Lato:wght@300&family=Source+Sans+Pro&family=Open+Sans&display=swap');
 
 /*
 Oswald
-Noto Sans
-Merriweather Sans
-PT Sans
-Nunito
-Nunito Sans
+Barlow Condensed
 Lora
 Rubik
-Barlow Condensed
 Lato
-Source Sans Pro
+Nunito
+Nunito Sans
 Open Sans
+Source Sans Pro
 */
 
 @keyframes popIn {
@@ -138,7 +135,7 @@ html {
 #nav-mobile-author {
   font-family: 'Lora', sans-serif;
   font-size: calc(20px + 16 * ((100vw - 360px) / 720));
-  margin: 3px 0 0 0;
+  margin: 2% 0 0 0;
 }
 
 #nav-mobile-bot {
@@ -148,6 +145,7 @@ html {
   align-items: center;
   font-size: 24px;
   width: 100%;
+  margin: 1% 0 0 0;
 }
 
 #nav-mobile-bot-clickable-area-1 {
@@ -462,11 +460,11 @@ html {
   transition: .3s;
 }
 
-.gridbox-container:hover {
+/* .gridbox-container:hover {
   color: black;
   background-color: white;
   transition: .3s;
-}
+} */
 
 .gridbox {
   outline: 1px solid white;
@@ -526,13 +524,17 @@ html {
 
 
 
-#abouttheauthor-container {
+#abouttheauthor-container{
+  outline: 1px solid white;
+}
+
+#ata-container {
   color: white;
   background-color: black;
   display: flex;
   flex-direction: column;
   font-family: 'Lora', sans-serif;
-  outline: 1px solid white;
+  /* outline: 1px solid white; */
 }
 
 #ata-1 {
@@ -544,9 +546,12 @@ html {
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-family: 'Arvo', sans-serif;
-  font-size: 30px;
+  font-family: 'Lato', sans-serif;
+  font-size: 26px;
   height: 75px;
+  margin: 3% 0 0 0;
+  padding: 1.5% 0 0 0;
+  /* outline: 1px solid white; */
 }
 
 #ata-2 {
@@ -554,9 +559,10 @@ html {
 }
 
 #ata-textbody {
-  font-size: 18px;
-  line-height: 1.35;
-  padding: 1%;
+  font-size: 20px;
+  line-height: 1.45;
+  padding: 2%;
+  font-family: 'Rubik', sans-serif;
 }
 
 #ata-text-1 {
@@ -573,6 +579,8 @@ html {
 
 #c-container {
   margin: 5% 0 0 0;
+  padding: 0 0 10% 0;
+  /* outline: 1px solid white; */
 }
 
 #c-title {
@@ -580,9 +588,11 @@ html {
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-family: 'Arvo', sans-serif;
+  font-family: 'Lato', sans-serif;
   font-size: 30px;
   height: 75px;
+  padding: 0 0 1% 0;
+  margin: 0 0 3% 0;
 }
 
 #c-body {
@@ -630,8 +640,9 @@ html {
 }
 
 .c-title {
-  font-size: calc(14px + 20 * ((100vw - 360px) / 720));
+  font-size: calc(20px + 20 * ((100vw - 360px) / 720));
   text-align: center;
+  font-family: 'Barlow Condensed', sans-serif
 }
 
 .c-icon {
@@ -943,7 +954,7 @@ html {
 
 
 
-  #abouttheauthor-container {
+  #ata-container {
 
   }
   
