@@ -971,7 +971,7 @@ html {
   }
 
   #ata-textbody {
-    font-size: calc(18px + 16 * ((100vw - 720px) / 1600));
+    font-size: calc(18px + 10 * ((100vw - 720px) / 1600));
   }
   
   #ata-text-1 {
