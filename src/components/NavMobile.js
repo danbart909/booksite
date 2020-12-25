@@ -54,16 +54,16 @@ export default class NavMobile extends Component {
           </div>
           { this.props.menu && <div id='nav-mobile-menu'>
             <div id='sidebar'>
-              <NavLink to='/' exact={true} activeClassName='nav-home-active' id='sidebar-home'>
+              <NavLink to='/' exact={true} activeClassName='nav-home-active' className='nav-home'>
                 <span>HOME</span>
               </NavLink>
-              <NavLink to='/WhereToBuy' activeClassName='nav-wheretobuy-active' id='sidebar-wheretobuy'>
+              <NavLink to='/WhereToBuy' activeClassName='nav-wheretobuy-active'  className='nav-wheretobuy'>
                 <span>WHERE TO BUY</span>
               </NavLink>
-              <NavLink to='/AboutTheAuthor' activeClassName='nav-abouttheauthor-active' id='sidebar-abouttheauthor'>
+              <NavLink to='/AboutTheAuthor' activeClassName='nav-abouttheauthor-active'  className='nav-abouttheauthor'>
                 <span>ABOUT THE AUTHOR</span>
               </NavLink>
-              <NavLink to='/Excerpt' activeClassName='nav-excerpt-active' id='sidebar-excerpt'>
+              <NavLink to='/Excerpt' activeClassName='nav-excerpt-active' className='nav-excerpt'>
                 <span>EXCERPT</span>
               </NavLink>
             </div>

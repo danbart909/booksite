@@ -6,7 +6,6 @@ import Home from './components/Home.js';
 import WhereToBuy from './components/WhereToBuy.js'
 import AboutTheAuthor from './components/AboutTheAuthor.js'
 import Excerpt from './components/Excerpt.js'
-// import $ from 'jquery';
 
 export default class App extends Component {
   constructor(props) {
@@ -26,16 +25,6 @@ export default class App extends Component {
   }
 
   render() {
-
-    // $(document).ready(function () {
-
-    //   $('#overlord-body').click(function() {
-    //     $('#nav-mobile-menu').css('display', 'none')
-    //     $('#times').css('display', 'none')
-    //     $('#bars').css('display', 'inline')
-    //   })
-
-    // })
 
     return (
       <div id='overlord' onClick={this.closeMenu}>

@@ -6,35 +6,37 @@ export default class Nav extends Component {
   render() {
     return (
       <div id='nav-container'>
-        <div id='nav-top'>
-          <div id='nav-top-1'>
+        <div id='nav'>
+          <div id='nav-1'>
             <span id='nav-title-1'>BORN AGAIN</span>
             <span id='nav-title-2'>MAN-WHORE</span>
           </div>
-          <div id='nav-top-2'>
+          <div id='nav-2'>
             <span id='nav-author'>Marc Special</span>
           </div>
-        </div>
-        <div id='nav-bot'>
-          <div id='nav-bot-clickable-area'>
-            <NavLink to='/' exact={true} activeClassName='nav-home-active' id='nav-home'>
-              <span>HOME</span>
-            </NavLink>
-            <NavLink to='/WhereToBuy' activeClassName='nav-wheretobuy-active' id='nav-wheretobuy'>
-              <span>WHERE TO BUY</span>
-            </NavLink>
-            <NavLink to='/AboutTheAuthor' activeClassName='nav-abouttheauthor-active' id='nav-abouttheauthor'>
-              <span>ABOUT THE AUTHOR</span>
-            </NavLink>
-            <NavLink to='/Excerpt' activeClassName='nav-excerpt-active' id='nav-excerpt'>
-              <span>EXCERPT</span>
-            </NavLink>
+          <div id='nav-3'>
+            <div id='nav-3-clickable'>
+              <NavLink to='/' exact={true} activeClassName='nav-home-active' className='nav-home'>
+                <span>HOME</span>
+              </NavLink>
+              <NavLink to='/WhereToBuy' activeClassName='nav-wheretobuy-active' className='nav-wheretobuy'>
+                <span>WHERE TO BUY</span>
+              </NavLink>
+              <NavLink to='/AboutTheAuthor' activeClassName='nav-abouttheauthor-active' className='nav-abouttheauthor'>
+                <span>ABOUT THE AUTHOR</span>
+              </NavLink>
+              <NavLink to='/Excerpt' activeClassName='nav-excerpt-active' className='nav-excerpt'>
+                <span>EXCERPT</span>
+              </NavLink>
+            </div>
           </div>
         </div>
       </div>
     )
   }
 }
+
+
 
 {/*
 
