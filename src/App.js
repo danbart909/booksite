@@ -6,6 +6,7 @@ import Home from './components/Home.js';
 import WhereToBuy from './components/WhereToBuy.js'
 import AboutTheAuthor from './components/AboutTheAuthor.js'
 import Excerpt from './components/Excerpt.js'
+import Footer from './components/Footer.js'
 
 export default class App extends Component {
   constructor(props) {
@@ -42,9 +43,7 @@ export default class App extends Component {
             <Route path='/Excerpt' component={Excerpt} />
           </Switch>
         </div>
-        <div id='overlord-footer'>
-          <span>footer</span>
-        </div>
+        <Footer />
       </div>
     )
   }
