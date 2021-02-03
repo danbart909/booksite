@@ -4,7 +4,7 @@ import React, { Component } from 'react'
 export default class AboutTheAuthor extends Component {
   render() {
     return (
-      <div id='abouttheauthor-container'>
+      <div id='abouttheauthor-container' name='abouttheauthor'>
         <div id='ata-container'>
           <div id='ata-1'>
             <div id='ata-title'>
@@ -39,7 +39,7 @@ export default class AboutTheAuthor extends Component {
                     <span>CALL</span>
                   </div>
                   <div id='c-phone-2' className='c-icon'>
-                    <a href='tel:770-873-0803'><i className="fas fa-phone"/></a>
+                    <a href=''><i className="fas fa-phone"/></a>
                   </div>
                 </div>
   
@@ -48,7 +48,7 @@ export default class AboutTheAuthor extends Component {
                     <span>TEXT</span>
                   </div>
                   <div id='c-text-2' className='c-icon'>
-                    <a href='sms:7708730803'><i className="fas fa-comment-dots"/></a>
+                    <a href=''><i className="fas fa-comment-dots"/></a>
                   </div>
                 </div>
   

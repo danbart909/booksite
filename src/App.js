@@ -36,12 +36,16 @@ export default class App extends Component {
           closeMenu={this.closeMenu}
         />
         <div id='overlord-body'>
-          <Switch>
+          <Home />
+          <WhereToBuy />
+          <Excerpt />
+          <AboutTheAuthor />
+          {/* <Switch>
             <Route exact path='/' component={Home} />
             <Route path='/WhereToBuy' component={WhereToBuy} />
             <Route path='/AboutTheAuthor' component={AboutTheAuthor} />
             <Route path='/Excerpt' component={Excerpt} />
-          </Switch>
+          </Switch> */}
         </div>
         <Footer />
       </div>

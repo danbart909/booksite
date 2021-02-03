@@ -1,26 +1,10 @@
 import React, { Component } from 'react'
-import { NavLink } from 'react-router-dom'
-import $ from 'jquery';
+// import { NavLink } from 'react-router-dom'
+import { Link } from 'react-scroll'
 
 export default class NavMobile extends Component {
 
   render() {
-
-    // $(document).ready(function () {
-
-    //   $('#nav-mobile-bot-clickable-area-1').click(function() {
-    //     $('#nav-mobile-menu').css('display', 'flex')
-    //     $('#nav-mobile-bot-clickable-area-2').css('display', 'flex')
-    //     $('#nav-mobile-bot-clickable-area-1').css('display', 'none')
-    //   })
-
-    //   $('#nav-mobile-bot-clickable-area-2, #sidebar-home, #sidebar-wheretobuy, #sidebar-abouttheauthor, #sidebar-excerpt').click(function() {
-    //     $('#nav-mobile-menu').css('display', 'none')
-    //     $('#nav-mobile-bot-clickable-area-2').css('display', 'none')
-    //     $('#nav-mobile-bot-clickable-area-1').css('display', 'flex')
-    //   })
-
-    // })
 
     return (
       <>
@@ -54,18 +38,18 @@ export default class NavMobile extends Component {
           </div>
           { this.props.menu && <div id='nav-mobile-menu'>
             <div id='sidebar'>
-              <NavLink to='/' exact={true} activeClassName='nav-home-active' className='nav-home'>
+              <Link to='home' spy={true} smooth={true} duration={350} activeClassName='nav-home-active' className='nav-home'>
                 <span>HOME</span>
-              </NavLink>
-              <NavLink to='/WhereToBuy' activeClassName='nav-wheretobuy-active'  className='nav-wheretobuy'>
+              </Link>
+              <Link to='wheretobuy' spy={true} smooth={true} duration={350} activeClassName='nav-wheretobuy-active'  className='nav-wheretobuy'>
                 <span>WHERE TO BUY</span>
-              </NavLink>
-              <NavLink to='/AboutTheAuthor' activeClassName='nav-abouttheauthor-active'  className='nav-abouttheauthor'>
-                <span>ABOUT THE AUTHOR</span>
-              </NavLink>
-              <NavLink to='/Excerpt' activeClassName='nav-excerpt-active' className='nav-excerpt'>
+              </Link>
+              <Link to='excerpt' spy={true} smooth={true} duration={350} activeClassName='nav-excerpt-active' className='nav-excerpt'>
                 <span>EXCERPT</span>
-              </NavLink>
+              </Link>
+              <Link to='abouttheauthor' spy={true} smooth={true} duration={350} activeClassName='nav-abouttheauthor-active'  className='nav-abouttheauthor'>
+                <span>ABOUT THE AUTHOR</span>
+              </Link>
             </div>
           </div> }
         </div>

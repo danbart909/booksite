@@ -5,7 +5,7 @@ import React, { Component } from 'react'
 export default class WhereToBuy extends Component {
   render() {
     return (
-      <div id='wheretobuy-container'>
+      <div id='wheretobuy-container' name='wheretobuy'>
         <div id='wtb-title'>
           <span>Purchase Options</span>
         </div>

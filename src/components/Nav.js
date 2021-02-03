@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import { NavLink } from 'react-router-dom'
-// import { Link } from 'react-scroll'
+// import { NavLink } from 'react-router-dom'
+import { Link } from 'react-scroll'
 
 export default class Nav extends Component {
   render() {
@@ -16,18 +16,18 @@ export default class Nav extends Component {
           </div>
           <div id='nav-3'>
             <div id='nav-3-clickable'>
-              <NavLink to='/' exact={true} activeClassName='nav-home-active' className='nav-home'>
+              <Link to='home' spy={true} smooth={true} duration={350} offset={-75} activeClassName='nav-home-active' className='nav-home'>
                 <span>HOME</span>
-              </NavLink>
-              <NavLink to='/WhereToBuy' activeClassName='nav-wheretobuy-active' className='nav-wheretobuy'>
+              </Link>
+              <Link to='wheretobuy' spy={true} smooth={true} duration={350} offset={-75} activeClassName='nav-wheretobuy-active' className='nav-wheretobuy'>
                 <span>WHERE TO BUY</span>
-              </NavLink>
-              <NavLink to='/AboutTheAuthor' activeClassName='nav-abouttheauthor-active' className='nav-abouttheauthor'>
-                <span>ABOUT THE AUTHOR</span>
-              </NavLink>
-              <NavLink to='/Excerpt' activeClassName='nav-excerpt-active' className='nav-excerpt'>
+              </Link>
+              <Link to='excerpt' spy={true} smooth={true} duration={350} offset={-75} activeClassName='nav-excerpt-active' className='nav-excerpt'>
                 <span>EXCERPT</span>
-              </NavLink>
+              </Link>
+              <Link to='abouttheauthor' spy={true} smooth={true} duration={350} offset={-75} activeClassName='nav-abouttheauthor-active' className='nav-abouttheauthor'>
+                <span>ABOUT THE AUTHOR</span>
+              </Link>
             </div>
           </div>
         </div>
@@ -38,64 +38,79 @@ export default class Nav extends Component {
 
 
 
-{/*
+// <div id='nav-3-clickable'>
+//   <NavLink to='/' exact={true} activeClassName='nav-home-active' className='nav-home'>
+//     <span>HOME</span>
+//   </NavLink>
+//   <NavLink to='/WhereToBuy' activeClassName='nav-wheretobuy-active' className='nav-wheretobuy'>
+//     <span>WHERE TO BUY</span>
+//   </NavLink>
+//   <NavLink to='/AboutTheAuthor' activeClassName='nav-abouttheauthor-active' className='nav-abouttheauthor'>
+//     <span>ABOUT THE AUTHOR</span>
+//   </NavLink>
+//   <NavLink to='/Excerpt' activeClassName='nav-excerpt-active' className='nav-excerpt'>
+//     <span>EXCERPT</span>
+//   </NavLink>
+// </div>
 
-<NavLink to='/' exact={true} activeClassName='is-active' id='nav-home'>
-  Home
-</NavLink>
-<NavLink to='/WhereToBuy' activeClassName='is-active' id='nav-wheretobuy'>
-  Where to Buy
-</NavLink>
-<NavLink to='/AboutTheAuthor' activeClassName='is-active' id='nav-abouttheauthor'>
-  About the Author
-</NavLink>
-<NavLink to='/Contact' activeClassName='is-active' id='nav-contact'>
-  Contact
-</NavLink>
 
-<Link
-  to='home'
-  exact={true}
-  activeClassName='is-active'
-  id='nav-home'
-  spy={true}
-  smooth={true}
->
-  Home
-</Link>
-<Link
-  to='wheretobuy-container'
-  activeClassName='is-active'
-  id='nav-wheretobuy'
->
-  Where to Buy
-</Link>
-<Link
-  to='abouttheauthor-container'
-  activeClassName='is-active'
-  id='nav-abouttheauthor'
->
-  About the Author
-</Link>
-<Link
-  to='contact-container'
-  activeClassName='is-active'
-  id='nav-contact'
->
-  Contact
-</Link>
 
-<div id='nav-home'>
-  <a href='#contact-container'>Home</a>
-</div>
-<div id='nav-wheretobuy'>
-  Where to Buy
-</div>
-<div id='nav-abouttheauthor'>
-  About the Author
-</div>
-<div id='nav-contact'>
-  Contact
-</div>
 
-*/}
+
+// <NavLink to='/' exact={true} activeClassName='is-active' id='nav-home'>
+//   Home
+// </NavLink>
+// <NavLink to='/WhereToBuy' activeClassName='is-active' id='nav-wheretobuy'>
+//   Where to Buy
+// </NavLink>
+// <NavLink to='/AboutTheAuthor' activeClassName='is-active' id='nav-abouttheauthor'>
+//   About the Author
+// </NavLink>
+// <NavLink to='/Contact' activeClassName='is-active' id='nav-contact'>
+//   Contact
+// </NavLink>
+
+// <Link
+//   to='home'
+//   exact={true}
+//   activeClassName='is-active'
+//   id='nav-home'
+//   spy={true}
+//   smooth={true}
+// >
+//   Home
+// </Link>
+// <Link
+//   to='wheretobuy-container'
+//   activeClassName='is-active'
+//   id='nav-wheretobuy'
+// >
+//   Where to Buy
+// </Link>
+// <Link
+//   to='abouttheauthor-container'
+//   activeClassName='is-active'
+//   id='nav-abouttheauthor'
+// >
+//   About the Author
+// </Link>
+// <Link
+//   to='contact-container'
+//   activeClassName='is-active'
+//   id='nav-contact'
+// >
+//   Contact
+// </Link>
+
+// <div id='nav-home'>
+//   <a href='#contact-container'>Home</a>
+// </div>
+// <div id='nav-wheretobuy'>
+//   Where to Buy
+// </div>
+// <div id='nav-abouttheauthor'>
+//   About the Author
+// </div>
+// <div id='nav-contact'>
+//   Contact
+// </div>
